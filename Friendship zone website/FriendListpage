@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FriendList</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>table,th,td {border: 1px solid black;}
+        h1 {text-align: center;}
+        img{width:30%;}
+        </style>
+    </head>
+    <body>
+        <img src="C:\Users\prateek konduru\Desktop\friends.jpg" alt="img unavailable" width="25" height="250">
+        <h1>Friendship Zone</h1>
+        <strong>Details of friends..</strong>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>About</th>
+                <th>Send Request</th>
+                <th>Contact</td>
+            </tr>
+            <tr>
+                <td>Marriya</td>
+                <td>Adventurous,likes to participate in bungee jumping</td>
+                <td> <button type="button">friendship</button></td>
+                <td>555 77 855</br>
+                marriya@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Adams</td>
+                <td>Likes music,reads books</td>
+                <td> <button type="button">friendship</button></br>
+                    <button type="button">dating</button>    
+                 </td>
+                 <td>555 77 744</br>
+                adams@gmail.com</td>
+            </tr>
+        </table>
+        <br>
+       <br>
+
+   <a href="3rd.html" style="border: thick solid red">Register to get added into the list</a>  
+    </body>
+    </html>
