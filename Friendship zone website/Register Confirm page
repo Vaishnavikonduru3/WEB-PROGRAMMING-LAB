@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>h1 {text-align: center;}
+         img{width:30%;}
+        </style>
+        <title>RegisterConfirm</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body >
+       <img src="C:\Users\prateek konduru\Desktop\friends.jpg" alt="img unavailable" width="45" height="250">
+        <h1>Friendship Zone</h1>
+  <p style="border:4px; border-style:solid; border-color:#FF0000;   padding: 5em; ">
+<strong>Thank you for registering...</strong>
+        <br><br>
+        We will be adding you soon...
+<br><br><br>
+        <a href="1st.html">Home</a>
+
+<br>
+</p>
+       
+    </body>
+</html>
