@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>h1 {text-align: center;}
+        img{
+            width:30%;
+        }
+            </style>
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <img src="C:\Users\prateek konduru\Desktop\friends.jpg" alt="img unavailable" width="45" height="250">
+        <h1>Friendship Zone</h1>
+         <strong><h3>Add your details to register</h3></strong>
+         <form action="/3rd.html" method="get" >
+             <strong>Name</strong> <input type="text" value=""><br><br>
+               <strong>Email  </strong> <input type="email"><br><br>
+             <strong> Age   </strong><input type="number"><br><br>
+             <strong> Date of Birth   </strong><input type="date"><br><br>
+              <strong>Gender  </strong> <input type="radio" name="gender" checked value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female <br>
+              <strong>About  </strong>
+    <textarea id=" " name="w3review" rows="4" cols="50">
+     </textarea>
+       <br><br>
+              <strong>Phone  </strong> <input type="number"><br><br>
+             <strong> Interested in  </strong> <input type="radio" name="interested in" checked value="Friendship"> Friendship
+            <input type="radio" name="interested in" value="Dating"> Dating <br><br>
+            <strong>  Select a file:  </strong> <input type="file"><br><br>
+            <a href="4t.html" style="border: thick solid red"><input type="button" value="Register"></a>
+            <a href="5th.html" style="border: thick solid red"><input type="button" value="Register as Admin"></a>
+            
+         </form>
+        
+
+
+    </body>
+</html>
