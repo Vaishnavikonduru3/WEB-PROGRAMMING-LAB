@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>h1 {text-align: center;}
+        img{width:30%;} 
+        </style>
+        <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <img src="C:\Users\prateek konduru\Desktop\friends.jpg" alt="img unavailable" width="45" height="250">
+        <h1>Friendship Zone</h1>
+        
+        <strong>A place to find like minded people...</strong><br>
+        <dt>One of the most beautiful qualities of true friendship is to understand and to be understood.</dt><br>
+        <dd>
+            A real friend is the one who walks in when rest of the world walks out.
+        </dd><br>
+        <hr>
+        <ul>
+            <li><a href="FriendList.html">click here to connect to friends</a></li>
+            <li>send main for your suggestions <a href="mailto:someone@xyz.com?Subject=Hello%20again">support@gmail.com </a></li>
+        </ul>
+        <hr>
+        <strong>Features of friendship zone....</strong><br>
+        <dt><strong>Friendship</strong></dt><br>
+        <dd>Being part of the friendship zone enables you to be connected with your friends</dd><br>
+        <dt><strong>Dating</strong></dt><br>
+        <dd>being part of friendship zone helps you to find your life partner or your soulmate. Exchange your thoughts.Indulge in intimate converstions
+            and interact with the opposite sex.
+        </dd><br>
+        <strong>Follow us on:</strong><br>
+        <ul>
+            <li><a href="Facebook">Facebook</a></li>
+            <li><a href="Twitter">Twitter</a></li>
+        </ul>
+        <h2>All rights reserved</h2>
+    </body>
+</html>
