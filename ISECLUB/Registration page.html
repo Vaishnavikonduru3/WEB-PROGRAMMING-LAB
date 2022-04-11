@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ISE CLUB</title>
+<style>
+
+body, html {
+
+  background-image: url("college.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+form {
+background-color :lavender;
+
+ 
+}
+
+button {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+select {
+        width: 300px;
+        margin: 10px ;
+    }
+
+</style>
+
+</head>
+<br>
+<body >
+
+<form style="margin: auto; width: 500px;">
+<div class="bg-img">
+<fieldset > 
+    
+    <br><br>
+    <h1 style="text-align:center;"><b>REGISTRATION FORM</b></h1></br>
+  <strong>Name:</strong>
+<input type="text">
+<br><br>
+<strong>Designation:</strong>
+<select id= "dropdown">
+    <option disabled selected value> -- select an option -- </option>
+    <option value = "Head of department" selected>Head of department</option>
+    <option value = "Assistant lecturer">Assistant lecturer</option>
+    <option value = "Teacher">Teacher</option>
+    <option value = "Student">Student</option>
+    <option value = "Others">Others</option>
+ </select>
+<br><br>
+<strong>Blood Group:</strong>
+<label for="blood group"></label>
+  <input list="blood group" name="" id="">
+  <datalist id="blood group">
+    <option value="A+ ">
+    <option value="A-">
+   <option value="B+">
+    <option value="B-">
+        <option value="AB+">
+            <option value="AB-">
+                <option value="O+">
+                    <option value="O-">
+  </datalist>
+<br><br>
+<strong>Gender:</strong>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+<br><br>
+<strong>DOB:
+</strong>
+<input type="date">
+<br><br>
+<strong>Phone Number:</strong>
+<input type="phone" >
+<br><br>
+
+<strong>Address:</strong>
+<textarea id="" rows="4" cols="50">
+</textarea>
+<br><br>
+<strong>Email id:</strong>
+<input type="email">
+<br><br>
+<strong>Reason To Join:</strong>
+<textarea id="" rows="4" cols="50">
+</textarea>
+<br><br>
+<strong>Hobbies And Interest:</strong>
+<input type="text">
+<br><br>
+<strong>References:</strong>
+<input type="text">
+<br><br>
+<strong>Area of Interest:</strong>
+<label for="Area of Interest"></label>
+  <input list="Area of Interest" name="" id="">
+  <datalist id="Area of Interest">
+    <option value="AI/ML ">
+    <option value="Pharmacy">
+   <option value="Dental">
+    <option value="CS/IS">
+        <option value="EC/EEE">
+            <option value="Marketing">
+                <option value="Art/Dance/Music">
+                    <option value="Sports">
+                        <option value="Others"></option>
+  </datalist>
+<br><br>
+<button type="submit" value="Submit" onclick="alert('Congragulations! You are now a part of your desired club')">Submit</button> 
+   <button type="reset" value="Reset" onclick="alert(' Reset Successful ')">Reset</button>
+<br><br>
+
+</fieldset>
+</form>
+</div>
+
+</body>
+</html>
