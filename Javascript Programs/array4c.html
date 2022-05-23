@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,5,6,7];
+       Array.prototype.insert = function(data, position) {
+   if (position >= this.length)
+    {
+      this.push(data)   //  PLace at the end if position is more than total length of array
+   } 
+   else if (position <= 0) {
+      this.unshift(data)   // PLace at the start if position is less than or equal to 0
+   }
+    else
+    { 
+       // Shift all elements to right
+      for (let i = this.length; i >= position; i--) {
+         this[i] = this[i - 1];
+      }
+      this[position] = data;
+   }
+}
+arr.insert(10,2);
+document.write(arr);
+        </script>				
+        
+</body>
+</html>
