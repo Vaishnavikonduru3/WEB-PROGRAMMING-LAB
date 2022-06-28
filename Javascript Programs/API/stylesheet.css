@@ -1,0 +1,9 @@
+.homepage {
+    border-style: double;
+    margin-right: 80%;
+}
+
+#submit {
+    background-color: blue;
+    width: 5cm;
+}

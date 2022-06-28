@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="signUp">Sign Up</h1><br>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username"><br>
+    <p id="userText"></p>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password"><br>
+    <p id="passText"></p>
+    <button id="button" onclick=check() style="background-color: blue; width: 5cm;">SIGN UP</button>
+</body>
+<script>
+    function check() {
+        const password = document.getElementById("password").value
+        let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+        let mediumPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})')
+        if (strongPassword.test(password)) {
+            document.getElementById("passText").innerHTML = "Strong password"
+            document.getElementById("passText").style.color = "green"
+            document.getElementById("password").style.borderColor = "green"
+        } else if (mediumPassword.test(password)) {
+            document.getElementById("passText").innerHTML = "Medium password"
+            document.getElementById("passText").style.color = "orange"
+            document.getElementById("password").style.borderColor = "orange"
+        } else {
+            document.getElementById("passText").innerHTML = "Week password"
+            document.getElementById("passText").style.color = "red"
+            document.getElementById("password").style.borderColor = "red"
+        }
+    }
+</script>
+
+</html>

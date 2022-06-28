@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function count()
+        {
+            var sum=0
+            const words=document.getElementById("text").value;
+            var list=words.split(" ");
+            for(var i=0;i<list.length;i++)
+            {
+                if(list[i]!="")
+                sum+=list[i].length;
+            }
+            document.getElementById("show").innerHTML="You have written " + list.length + " words and "+sum+" characters"
+        }
+
+
+    </script>
+</head>
+<body>
+    <p>Enter some text below:</p>
+    <textarea name="textarea" id="text" cols="30" rows="10" oninput=count()></textarea><br>
+    <span id="show"></span>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        function toggle()
+        {
+            const pass=document.getElementById("password")
+            if(pass.type==="password")
+            pass.type="text"
+            else
+            pass.type="password"
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="homepage">
+        <h1>SIGN IN</h1>
+        <p>
+            <label for="username">USERNAME </label><br><br>
+            <input type="text" name="username" id="username"><br><br>
+            <label for="password">Password:</label><br><br>
+            <input type="password" id="password" name="password">
+            <input type="checkbox" id="checkbox" onclick=toggle()><br><br>
+            <button type="Login" id="submit">LOG IN</button>
+        </p>
+    </div>
+</body>
+</html>
+
