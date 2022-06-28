@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dog(q)
+{
+ var p=q;
+ var s=" ";
+ for (var x=0;x < p.length;x++)
+ {
+ if(s.indexOf(p.charAt(x))==-1)
+  {
+  s+= p[x];  
+   }
+  }
+  return s;  
+}  
+document.write(dog("thequickbrownfoxjumpsoverthelazydog"));
+        </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printFarmInventory(a,b) 
+{
+             var cows=String(a);
+             while(cows.length < 3)
+             cows="0" + cows;
+             document.write(cows+"COWS"+"<br>");
+
+         var chick=String(b);
+         while(chick.length<3)
+         chick="0"+ chick;
+         document.write(chick+"CHICKENS");
+}
+
+printFarmInventory(7,11);
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST" enctype="multipart/form-data" onsubmit="return check(event)">
+        String : <input name="string"><br>
+        <select name="what">
+            <option value="1">Lower Case</option>
+            <option value="2">Upper Case</option>
+        </select>
+        <input type="submit">
+    </form>
+
+
+    <script>
+        const check = (e) => {
+            const form = new FormData(e.target);
+            const string = form.get("string");
+            const what = form.get("what");
+            console.log(string);
+            if (what == "1") {
+                document.write(string.toLowerCase());
+            }
+            if (what == "2") {
+                document.write(string.toUpperCase());
+            }
+        };
+    </script>
+</body>
+
+</html>

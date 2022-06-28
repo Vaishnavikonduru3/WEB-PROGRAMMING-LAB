@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const find_more_than_average = (a) => {
+            var len = a.length;
+            var sum = 0;
+            for (var i = 0; i < len; i++) {
+                // console.log(a[i]);
+                sum = sum + a[i];
+            }
+            var avg = sum / len;
+            var count = 0;
+            var above_avg = "";
+            for (var i = 0; i < len; i++) {
+                if (a[i] >= avg) {
+                    count++;
+                    above_avg += a[i] + " ,";
+                }
+            }
+            var avg_per = (100 * count) / len;
+            document.write("Average =" + avg + "<br>");
+            document.write("Above avg " + above_avg + "<br>");
+            document.write("Above Average percentage " + avg_per + "<br>");
+        }
+
+        const generate_frequency = (a) => {
+            var arr = [];
+            var len = a.length;
+            for (var i = 0; i < len; i++) {
+                var temp = -1;
+                for (var j = 0; j < len; j++) {
+                    if (a[i] == a[j]) {
+                        temp++;
+                    }
+                }
+                // console.log(temp);
+                arr.push(temp);
+            }
+            document.write("Frequency " + arr);
+        }
+        marks = [12, 18, 25, 24, 2, 5, 18, 20, 20, 21];
+        document.write("Data " + marks + "<br>");
+        find_more_than_average(marks);
+        generate_frequency(marks);
+
+    </script>
+</body>
+
+</html>
