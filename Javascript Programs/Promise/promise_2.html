@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+let func1=(str1)=>new Promise(function(resolve,reject)
+{
+if(str1=='flight-booking'|| str1=='flightbooking')
+resolve("Flight booked")
+else
+resolve("Flight blocked")
+})
+let func2=(str2)=>new Promise(function(resolve,reject)
+{
+if(str2=='hotel-booking'|| str2=='hotelbooking')
+resolve("Hotel booked")
+else
+resolve("Hotel blocked")
+})
+let str1=prompt("Enter flight-booking to book a flight")
+func1(str1).then((res)=>{alert(res)
+let str2=prompt("Enter hotel-booking to book a hotel")
+func2(str2).then((res)=>alert(res))}).catch((res)=>alert(res))
+</script>
+</body>
+</html>
