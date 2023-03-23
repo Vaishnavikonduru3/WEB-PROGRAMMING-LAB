@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'windows'
-    }
-
-  }
+  agent any
   stages {
     stage('') {
       steps {
@@ -12,8 +7,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    VS_SIGN = 'true'
   }
 }
