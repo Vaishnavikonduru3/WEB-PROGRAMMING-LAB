@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('') {
       steps {
-        sh 'Set VS_SIGN=yes'
+        bat(script: 'Set VS_SIGN=yes', returnStatus: true)
       }
     }
 
